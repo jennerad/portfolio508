@@ -1,0 +1,463 @@
+/*
+Project Name: Jennifer Nerad Portfolio
+Author: Jennifer Nerad
+*/
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Codystar', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+/*main color: hsl (229, 35%, 18%);
+/*accent color: hsl(229, 14%, 32%);
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	/*padding: 0 0 10px 10px; */
+}
+
+.alignleft {
+	float: left;
+	/*padding: 0 10px 10px 0; */
+}
+
+.absolute { /*this is formula for centering*/
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*******************************************/
+
+/*#container {
+	width: 960px;
+	margin: auto;
+}*/
+html {
+  font-size: 16px;
+  line-height: 1.7em;
+  border: 0;
+  /*width: 1200px;*/
+}
+
+body{
+  /*background-color: #363636;*/
+  font-size: 62.5%; /* 10/16 -> makes 1em =10px for ez math*/
+	letter-spacing: .2em;
+	font-family: 'Lato', sans-serif, Verdana; font-weight: 100;
+  position: relative;
+  top: 70px;
+}
+
+article{
+  width: 400px;
+  height: 300px;
+  float: left;
+}
+
+article img {
+  width: 100%;
+}
+
+/*** NAV ***/
+
+.nav-wrapper {
+  height: 70px;
+  /*background-color: #eee;*/
+  background-color: rgba(210,211,212, 1);
+    /*background-color: rgba(255,255,255, .8);*/
+  position: fixed;
+	z-index: 999;
+	/*width: 1200px;*/
+  width: 100%;
+  margin: auto;
+	/*background-color: transparent;*/
+	/*height: 15em;*/
+}
+
+.logoMain {
+  /*position: relative;*/
+  height: 50px;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25px;
+  padding: 4px 0;
+}
+
+.logoSmall {
+  display: none;
+}
+
+nav {
+		position: relative;
+		/*top: 42;*/
+}
+
+nav ul {
+  text-align: right;
+  position: absolute;
+  top: 17px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: .6em;
+}
+
+nav li{
+  display: inline;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 0;
+  padding: 0 25px;
+  margin-top: 20px;
+}
+
+nav a, nav li {
+	text-decoration: none;
+	color: black;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+a:hover, a:active, a:focus {
+  font-weight: 400;
+  outline: none;
+  /*text-decoration: underline;*/
+}
+
+.postLeadImage {
+  width: 1200px;
+}
+
+.post {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.post img {
+  width: 600px;
+  margin: 25px auto;
+  /*height: 400px;*/
+}
+
+.post h1 {
+  font-size: 2em;
+  margin: 0 0 .3em 0;
+  text-transform: uppercase;
+  /*margin: 2em 0 1em;*/
+}
+
+.post h3 {
+
+}
+
+.post p {
+  font-size: 1.4em;
+  text-align: left;
+}
+
+.post h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.post h4{
+  font-size: 1.4em;
+  line-height: 1.8em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.bio {
+  /*max-width: 150px;*/
+  margin: 10px 0 ;
+  text-align: center;
+}
+
+.bio img {
+  max-width: 150px;
+}
+/*** TYPE ***/
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+		font-family: 'Lato', 'Verdana', sans-serif; font-weight: 300;
+		color: #fff;
+    text-align: center;
+    padding: 2em 0 0;
+    margin: 0;
+    font-size: 1em;
+    color: black;
+    line-height: 0em;
+}
+
+h6 {
+  font-size: 1em;
+  margin: 5px auto;
+  padding-top: 5px;
+  /*line-height: 0em;*/
+}
+
+p {
+  font-size: 1em;
+  line-height: 2em;
+  /*margin-left: 30px;*/
+  /*margin-right: 30px;*/
+  color: black;
+}
+
+footer {
+  clear: both;
+  height: 100px;
+  /*background-color: #ddd;*/
+  background-color: rgba(210,211,212, 1);
+
+}
+
+footer img {
+  /*width: 50px;*/
+}
+
+footer ul {
+  text-align: center;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+/*  bottom: 0;
+  left: 0;
+  right: 0;*/
+}
+
+footer li{
+  display: inline;
+  /*text-transform: uppercase;*/
+  /*margin: 0 0;*/
+  padding: 0 10px;
+  /*margin-top: 20px;*/
+  /*border-bottom: 1px white solid;*/
+}
+
+/*** ANIMATION ***/
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/*** STORIES ***/
+.opacity {
+  opacity: 0.5;
+}
+
+.outer {
+  position: relative;
+  width: 33.333%;
+  /*display: table;*/
+  /*display: inline-flex;*/
+  text-align: center;
+  padding: 0 0;
+  margin: 0 0;
+  max-width: 400px;
+  /*max-height: 340px;*/
+}
+.inner {
+  /*display: table-cell;*/
+  vertical-align: middle;
+  width: 100%;
+  /*margin-left: 15px;*/
+}
+
+.inner h2 {
+  /*padding: 10px 0;*/
+  /*vertical-align: middle;*/
+  font-size: 1.5em;
+  font-weight: 400;
+  /*line-height: 1.4em;*/
+  text-transform: uppercase;
+  position: absolute;
+  top:40%;
+  left: 0;
+  right: 0;
+  color: black;
+  /*background-color: rgba(255,255,255, .8);*/
+}
+
+.smaller {
+  font-size: 1em;
+}
+
+
+
+
+
+/*** MEDIA QUERIES ***/
+
+/*** Handheld ***/
+
+@media screen and (max-width: 1199px) {
+      (-webkit-min-device-pixel-ratio: 2),
+      /*(min-resolution: 192dpi)*/
+    /*{}
+
+    }*/
+    /*  .logo-list {
+          height: 85px;
+          padding: 1em;
+          margin: auto 0;
+        }*/
+    html {
+      width: 400px;
+    }
+    .nav-wrapper {
+      height: 120px;
+      width: 100%;
+      /*background-color: transparent;*/
+      /*height: 15em;*/
+    }
+
+    header {
+      height: 50px;
+      /*background-color: #ddd;*/
+    }
+
+    nav {
+      /*top: 30;*/
+      margin: 0 auto 0;
+    }
+
+    nav ul {
+      /*float: left;*/
+      clear: both;
+      text-align: center;
+      padding: 0; margin: 0;
+    }
+
+    nav li{
+      margin: 0 0;
+      padding: 0 5px;
+    }
+
+    nav a, nav li {
+      font-size: 1.2em;
+      line-height: 1em;
+    }
+
+    .logoMain {
+      display: none;
+      min-height: 60px;
+    }
+
+    .logoSmall {
+      text-align: center;
+      margin: 5px auto 0;
+      display: block;
+      width: 70%;
+      max-width: 300px;
+    }
+
+    .outer {
+      width: 400px;
+      height: 300px;
+      display: block;
+      vertical-align: middle;
+    }
+
+    .postLeadImage {
+      width: 400px;
+    }
+
+    .post {
+      width: 370px;
+      margin: 0 auto;
+    }
+
+    .post img {
+      width: 370px;
+      margin: 10px auto 0;
+    }
+
+    .post h1 {
+      font-size: 1.8em;
+      margin: 0 0 .3em 0;
+      text-transform: uppercase;
+    }
+
+    .post p {
+      font-size: 1.2em;
+      text-align: left;
+      padding: 1.8em 0 0;
+    }
+
+    .post h3 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .post h4{
+      font-size: 1.2em;
+      line-height: 1.8em;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+
+.visible {
+  display: block;
+  /*background-color: white;*/
+}
+
+.inner img {
+
+}
+
+.inner h2 {
+  /*padding: 10px 0;*/
+  /*vertical-align: middle;*/
+  font-size: 2.0em;
+  line-height: 1em;
+  position: absolute;
+  top:33%;
+  left: 0;
+  right: 0;
+  color: black;
+  /*background-color: rgba(255,255,255, .8);*/
+}
