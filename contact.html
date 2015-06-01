@@ -24,23 +24,29 @@
             </nav>
           </div>
         </header>
-    <body>
-      <img src="images/adele.jpg" alt="Artist working" class="postLeadImage">
-        <div class="post">
-            <h1>Creative Space</h1>
-            <p>I am a curious person and have always been interested in the inner workings of people. When I meet a creative person, I immediately begin asking questions: How did you get started? What inspires you? What is your process? I want to place myself in their shoes for just a moment. This curiosity led me to begin a series of work where I make environmental photographic portraits of creative people working in their creative spaces.</p>
-            <p>I have had the good fortune to meet and photograph numerous dedicated  artists and craftspeople who find time and space to feed their creative spirit.</p>
-          <img src="images/peggy.jpg">
-          <img src="images/dave.jpg">
-          <h5 class="pullquote">“I have learned a bit about the 'muse' people talk about. That if I show up and sit down ready to work, ideas come to me."<br></h5>
-          <h5>-Tricia Stackle</h5>
-          <img src="images/tricia.jpg">
-        </div>
-    </body>
-    <footer>
+	<body>
+		<div id="contact-wrapper">
+			<form action="MAILTO:jennifernerad@yahoo.com" method="post" enctype="text/plain">
+				<h2> </h2>
+			 	<!-- <legend>Send me an email</legend> -->
+			 	<label for="name-first">Name:*</label><br>
+			 		<input type="text" placeholder="First" id="name-first" name="name[first]" required >
+			 		<input type="text" placeholder="Last" id="name-last" name="name[last]" size="47%" required>
+			 	</br>
+			 	<label for="email-address">Email Address:*</label>
+			 		<input type="email" id="email-address" placeholder="youremail@domain.com" name="email-address" required>
+			 	<label for="subject">Subject:*</label>
+			 		<input type="text" placeholder="Subject" id="subject" name="subject" required>
+			 	<label for="message">Message:*</label>
+			 		<textarea name="message" placeholder="What's up?" required></textarea>
+				 <input id="submit" type="submit" value="Send">
+			 </form>
+		</div>
+
+    <footer id="footer">
       <ul>
         <li>
-          <a href="#" target="_blank"><img src="graphics/emailDot.png" alt="Email"></a>
+          <a href="contact.html" target="_blank"><img src="graphics/emailDot.png" alt="Email"></a>
         </li>
         <li>
           <a href="http://instagram.com/jennifernerad/" target="_blank"><img src="graphics/instagramDot.png" alt="Instagram"></a>
@@ -51,4 +57,8 @@
       </ul>
           <h6>&copy; 2015 Jennifer Nerad</h6>
     </footer>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
 </html>
