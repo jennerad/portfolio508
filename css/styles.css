@@ -331,6 +331,8 @@ footer li{
   /*margin-left: 15px;*/
 }
 
+
+
 .inner h2 {
   /*padding: 10px 0;*/
   /*vertical-align: middle;*/
@@ -592,6 +594,13 @@ width: 49.5%;
       display: block;
       vertical-align: middle;
     }
+    .outer-last {
+      margin-bottom: 100px;
+    }
+
+    .about-last {
+      padding-bottom: 80px;
+    }
 
     .postLeadImage {
       max-width: 100%;
@@ -626,7 +635,7 @@ width: 49.5%;
       font-size: 1.2em;
       text-align: left;
       /*padding: 1.8em 0;*/
-      margin: 10px 0;
+      /*margin: 10px 0;*/
     }
 
     .post h3 {
