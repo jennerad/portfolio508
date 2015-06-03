@@ -176,7 +176,7 @@ a:hover, a:active, a:focus{
 
 .post img {
   width: 600px;
-  margin: 25px auto;
+  margin: 25px auto 0px;
   /*height: 400px;*/
 }
 
